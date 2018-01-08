@@ -1,6 +1,9 @@
+# Java
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
-# Path
+# TeX
 export PATH="/Library/TeX/texbin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Ruby
+export PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init - zsh)"
