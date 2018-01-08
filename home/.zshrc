@@ -39,6 +39,7 @@ alias ....='cd ../../..'
 alias la='ls -aG'
 alias ll='ls -lG'
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias be="bundle exec"
 
 # "~hoge" が特定のパス名に展開されるようにする（ブックマークのようなもの）
 # 例： cd ~hoge と入力すると /long/path/to/hogehoge ディレクトリに移動
