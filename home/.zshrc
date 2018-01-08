@@ -123,8 +123,5 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# prompt
-PROMPT='%n:%c$ '
-
 # rbenv
 eval "$(rbenv init - zsh)"

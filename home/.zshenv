@@ -6,3 +6,6 @@ export PATH="/Library/TeX/texbin:$PATH"
 
 # Ruby
 export PATH="$HOME/.rbenv/shims:$PATH"
+
+# prompt
+PROMPT='%n:%c$ '
