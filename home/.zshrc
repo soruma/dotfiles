@@ -38,7 +38,15 @@ alias ....='cd ../../..'
 
 alias la='ls -aG'
 alias ll='ls -lG'
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
+# Emacs
+case ${OSTYPE} in
+    darwin*)
+        alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+        ;;
+esac
+
+# Ruby
 alias be="bundle exec"
 
 # "~hoge" が特定のパス名に展開されるようにする（ブックマークのようなもの）
