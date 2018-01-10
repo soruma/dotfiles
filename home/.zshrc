@@ -1,3 +1,4 @@
+# -*- mode: sh -*-
 #peco
 function peco-select-history() {
     local tac
@@ -35,19 +36,6 @@ setopt auto_cd
 # 2つ上、3つ上にも移動できるようにする
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-alias la='ls -aG'
-alias ll='ls -lG'
-
-# Emacs
-case ${OSTYPE} in
-    darwin*)
-        alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-        ;;
-esac
-
-# Ruby
-alias be="bundle exec"
 
 # "~hoge" が特定のパス名に展開されるようにする（ブックマークのようなもの）
 # 例： cd ~hoge と入力すると /long/path/to/hogehoge ディレクトリに移動
@@ -125,3 +113,6 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # rbenv
 eval "$(rbenv init - zsh)"
+
+# load .zshrc_*
+[ -f $ZDOTDIR/.zshrc_external ] && . $ZDOTDIR/.zshrc_alias

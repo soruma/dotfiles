@@ -1,0 +1,11 @@
+# -*- mode: sh -*-
+alias la='ls -aG'
+alias ll='ls -lG'
+
+alias be="bundle exec"
+
+case ${OSTYPE} in
+    darwin*)
+        alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+        ;;
+esac
