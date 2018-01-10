@@ -100,8 +100,8 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 # cdの後にlsを実行
 chpwd() { ls -trg }
 
-if [[ -s /Users/soruma/.nvm/nvm.sh ]] ; then source /Users/soruma/.nvm/nvm.sh ; fi
-export PATH="$HOME/.yarn/bin:$PATH"
+# Load nvm
+if [[ -s $HOME/.nvm/nvm.sh ]] ; then source $HOME/.nvm/nvm.sh ; fi
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
