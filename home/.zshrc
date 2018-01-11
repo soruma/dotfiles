@@ -113,4 +113,4 @@ if [[ -s $HOME/.nvm/nvm.sh ]] ; then source $HOME/.nvm/nvm.sh ; fi
 eval "$(rbenv init - zsh)"
 
 # load .zshrc_*
-[ -f $ZDOTDIR/.zshrc_external ] && . $ZDOTDIR/.zshrc_alias
+[ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
