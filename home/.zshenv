@@ -13,6 +13,3 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # ZSH
 export ZDOTDIR="$HOME/.zsh"
-
-# prompt
-PROMPT='%n:%c$ '
