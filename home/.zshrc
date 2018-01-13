@@ -1,15 +1,9 @@
 # -*- mode: sh -*-
+# install zplug
 if [[ ! -d ~/.zplug ]];then
   git clone https://github.com/zplug/zplug ~/.zplug
 fi
-
 source ~/.zplug/init.zsh
-
-# Set the priority when loading
-# e.g., zsh-syntax-highlighting must be loaded
-# after executing compinit command and sourcing other plugins
-# (If the defer tag is given 2 or above, run after compinit command)
-#zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # Can manage local plugins
 zplug "~/.zsh", from:local
