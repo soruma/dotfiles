@@ -12,4 +12,4 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # ZSH
-export ZDOTDIR="$HOME/.zsh"
+export ZDOTDIR="$HOME/"
