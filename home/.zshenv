@@ -12,6 +12,13 @@ else
     export PATH="$HOME/.rbenv/bin:$PATH"
 fi
 
+# pyenv
+if [ -e {$HOME/.pyenv/shims:$PATH} ]; then
+    export PATH="$HOME/.pyenv/shims:$PATH"
+else
+    export PATH="$HOME/.pyenv/bin:$PATH"
+fi
+
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 

@@ -62,5 +62,8 @@ if [[ -s $HOME/.nvm/nvm.sh ]] ; then source $HOME/.nvm/nvm.sh ; fi
 # rbenv
 eval "$(rbenv init - zsh)"
 
+# pyenv
+eval "$(pyenv init -)"
+
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
