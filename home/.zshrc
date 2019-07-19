@@ -65,5 +65,8 @@ eval "$(rbenv init - zsh)"
 # pyenv
 eval "$(pyenv init -)"
 
+# homeshick
+source "$HOMESHICK_DIR/homeshick.sh"
+
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias

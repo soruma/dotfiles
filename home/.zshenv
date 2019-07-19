@@ -22,5 +22,8 @@ fi
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+# homeshick
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+
 # ZSH
 export ZDOTDIR="$HOME/"
