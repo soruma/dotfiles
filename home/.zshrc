@@ -8,6 +8,9 @@ source ~/.zplug/init.zsh
 # Can manage local plugins
 zplug "~/.zsh", from:local
 
+# This plugin adds many useful aliases and functions.
+zplug "plugins/git", from:oh-my-zsh
+
 # Load theme file
 zplug "themes/theunraveler", from:oh-my-zsh
 
