@@ -19,6 +19,13 @@ else
     export PATH="$HOME/.pyenv/bin:$PATH"
 fi
 
+# ndenv(Node.js)
+if [ -e {$HOME/.pyenv/shims:$PATH} ]; then
+    export PATH="$HOME/.ndenv/shims:$PATH"
+else
+    export PATH="$HOME/.ndenv/bin:$PATH"
+fi
+
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
