@@ -39,3 +39,5 @@ export ZDOTDIR="$HOME/"
 export PKG_CONFIG_PATH=/opt/ImageMagick/lib/pkgconfig
 export PATH=/usr/local/Cellar/openssl/1.0.2t/bin:$PATH
 export PATH=/usr/local/opt/imagemagick@6/bin:$PATH
+
+export PATH="/usr/local/opt/texinfo/bin:$PATH"
