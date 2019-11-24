@@ -14,6 +14,7 @@ RUN set -x && \
         git \
         openjdk-14-jdk \
         ruby \
+        vim \
         zsh && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
