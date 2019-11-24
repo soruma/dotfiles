@@ -55,9 +55,6 @@ bindkey '^r' peco-select-history
 # cdの後にlsを実行
 chpwd() { ls -trg }
 
-# Load nvm
-if [[ -s $HOME/.nvm/nvm.sh ]] ; then source $HOME/.nvm/nvm.sh ; fi
-
 # emacsでZSHを使う
 [[ $EMACS = t ]] && unsetopt zle
 
