@@ -41,3 +41,4 @@ export PATH=/usr/local/Cellar/openssl/1.0.2t/bin:$PATH
 export PATH=/usr/local/opt/imagemagick@6/bin:$PATH
 
 export PATH="/usr/local/opt/texinfo/bin:$PATH"
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
