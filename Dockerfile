@@ -23,6 +23,6 @@ RUN git clone https://github.com/zplug/zplug $ZPLUG_HOME && \
     gem install homesick && \
     homesick clone soruma/dotfiles && \
     homesick link dotfiles && \
-    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv && \
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv && \
     git clone https://github.com/pyenv/pyenv.git ~/.pyenv && \
     git clone https://github.com/riywo/ndenv ~/.ndenv
