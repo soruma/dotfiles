@@ -20,7 +20,7 @@ else
 fi
 
 # ndenv(Node.js)
-if [ -e {$HOME/.pyenv/shims:$PATH} ]; then
+if [ -e {$HOME/.ndenv/shims:$PATH} ]; then
     export PATH="$HOME/.ndenv/shims:$PATH"
 else
     export PATH="$HOME/.ndenv/bin:$PATH"
