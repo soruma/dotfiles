@@ -10,6 +10,8 @@ zplug "~/.zsh", from:local
 
 # This plugin adds many useful aliases and functions.
 zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/docker-compose", from:oh-my-zsh
 
 # Load theme file
 zplug "themes/theunraveler", from:oh-my-zsh
