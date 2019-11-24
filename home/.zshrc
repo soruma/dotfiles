@@ -5,8 +5,8 @@ if [[ ! -d ~/.zplug ]];then
 fi
 source ~/.zplug/init.zsh
 
-# Can manage local plugins
-zplug "~/.zsh", from:local
+# Load local alias
+source ~/.zsh/.zshrc_alias
 
 # This plugin adds many useful aliases and functions.
 zplug "plugins/git", from:oh-my-zsh
