@@ -8,7 +8,4 @@ case ${OSTYPE} in
     darwin*)
         # Emacs
         alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-        # VS Code
-        code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-        ;;
 esac
