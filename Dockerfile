@@ -12,7 +12,7 @@ RUN set -x && \
         curl \
         emacs \
         git \
-        openjdk-12-jdk \
+        openjdk-14-jdk \
         ruby \
         zsh && \
     apt clean && \
