@@ -42,3 +42,6 @@ export PATH=/usr/local/opt/imagemagick@6/bin:$PATH
 
 export PATH="/usr/local/opt/texinfo/bin:$PATH"
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+
+# Git
+export PATH=/usr/local/Cellar/git/2.14.1/bin:$PATH
