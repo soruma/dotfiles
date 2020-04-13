@@ -8,4 +8,5 @@ case ${OSTYPE} in
     darwin*)
         # Emacs
         alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+        alias sed='gsed'
 esac
