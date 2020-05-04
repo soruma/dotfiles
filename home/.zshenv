@@ -26,6 +26,9 @@ else
     export PATH="$HOME/.ndenv/bin:$PATH"
 fi
 
+# exenv(Elixir)
+export PATH="$HOME/.exenv/bin:$PATH"
+
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
