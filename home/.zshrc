@@ -14,7 +14,7 @@ zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/docker-compose", from:oh-my-zsh
 
 # Load theme file
-zplug "themes/theunraveler", from:oh-my-zsh
+zplug "themes/amuse", from:oh-my-zsh
 
 # Syntax highlighting bundle. zsh-syntax-highlighting must be loaded after
 # excuting compinit command and sourcing other plugins.
