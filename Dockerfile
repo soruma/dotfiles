@@ -14,8 +14,7 @@ RUN set -x && \
         ruby \
         sudo \
         vim \
-        zlib1g-dev \
-        zsh && \
+        zlib1g-dev && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -37,7 +36,6 @@ RUN set -x && \
     eval "$(rbenv init -)" && \
     rbenv install 2.7.1 && \
     rbenv global 2.7.1 && \
-    git clone https://github.com/zplug/zplug .zplug && \
     gem install homesick && \
     homesick clone soruma/dotfiles && \
     homesick link dotfiles

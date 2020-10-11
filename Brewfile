@@ -1,10 +1,15 @@
-# ruby
+# language
+## ruby
 brew "rbenv"
 brew "ruby-build"
 
-# python
+## python
 brew "pyenv"
 
-# node
+## node
 brew "ndenv"
 brew "node-build"
+
+# shell
+brew "zsh"
+brew "zplug"
