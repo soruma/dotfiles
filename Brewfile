@@ -10,6 +10,9 @@ brew "pyenv"
 brew "ndenv"
 brew "node-build"
 
+## java
+brew "openjdk@14"
+
 # shell
 brew "zsh"
 brew "zplug"

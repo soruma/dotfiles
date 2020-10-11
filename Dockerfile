@@ -9,7 +9,6 @@ RUN set -x && \
         build-essential \
         curl \
         git \
-        openjdk-14-jdk \
         sudo \
         zlib1g-dev && \
     apt clean && \
