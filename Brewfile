@@ -17,3 +17,6 @@ brew "zplug"
 # editor
 brew "emacs"
 brew "vim"
+
+# other
+brew "curl"

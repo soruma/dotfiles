@@ -6,8 +6,8 @@ ENV TERM xterm
 RUN set -x && \
     apt update && \
     apt install -y \
-        curl \
         build-essential \
+        curl \
         git \
         openjdk-14-jdk \
         sudo \
