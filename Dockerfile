@@ -11,7 +11,6 @@ RUN set -x && \
         emacs \
         git \
         openjdk-14-jdk \
-        ruby \
         sudo \
         vim \
         zlib1g-dev && \
