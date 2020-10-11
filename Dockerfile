@@ -28,20 +28,7 @@ RUN echo 'testuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER testuser
 WORKDIR /home/testuser
 
-RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+COPY Brewfile .
+COPY setup.sh .
 
-RUN set -x && \
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
-    brew install rbenv ruby-build && \
-    eval "$(rbenv init -)" && \
-    rbenv install 2.7.1 && \
-    rbenv global 2.7.1 && \
-    gem install homesick && \
-    homesick clone soruma/dotfiles && \
-    homesick link dotfiles
-
-ADD Brewfile .
-
-RUN set -x && \
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
-    brew bundle
+RUN ./setup.sh
