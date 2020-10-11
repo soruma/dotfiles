@@ -33,10 +33,7 @@ RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 
 RUN set -x && \
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
-    brew install rbenv ruby-build pyenv ndenv node-build; exit 0
-
-RUN set -x && \
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
+    brew install rbenv ruby-build && \
     eval "$(rbenv init -)" && \
     rbenv install 2.7.1 && \
     rbenv global 2.7.1 && \
@@ -44,3 +41,9 @@ RUN set -x && \
     gem install homesick && \
     homesick clone soruma/dotfiles && \
     homesick link dotfiles
+
+ADD Brewfile .
+
+RUN set -x && \
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
+    brew bundle
