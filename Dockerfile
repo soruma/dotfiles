@@ -14,6 +14,7 @@ RUN set -x && \
         ruby \
         sudo \
         vim \
+        zlib1g-dev \
         zsh && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
@@ -34,8 +35,6 @@ RUN set -x && \
     echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/testuser/.profile && \
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
     brew install rbenv ruby-build pyenv ndenv node-build; exit 0
-
-RUN sudo apt update && sudo apt install -y zlib1g-dev
 
 RUN set -x && \
     . /home/testuser/.profile && \
