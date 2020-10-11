@@ -32,12 +32,11 @@ WORKDIR /home/testuser
 RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 RUN set -x && \
-    echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/testuser/.profile && \
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
     brew install rbenv ruby-build pyenv ndenv node-build; exit 0
 
 RUN set -x && \
-    . /home/testuser/.profile && \
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) && \
     eval "$(rbenv init -)" && \
     rbenv install 2.7.1 && \
     rbenv global 2.7.1 && \
