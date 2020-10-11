@@ -23,3 +23,4 @@ brew "vim"
 
 # other
 brew "curl"
+brew "tmux"
