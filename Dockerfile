@@ -8,11 +8,9 @@ RUN set -x && \
     apt install -y \
         curl \
         build-essential \
-        emacs \
         git \
         openjdk-14-jdk \
         sudo \
-        vim \
         zlib1g-dev && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*

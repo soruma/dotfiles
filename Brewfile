@@ -13,3 +13,7 @@ brew "node-build"
 # shell
 brew "zsh"
 brew "zplug"
+
+# editor
+brew "emacs"
+brew "vim"
