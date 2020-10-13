@@ -1,4 +1,10 @@
 # -*- mode: sh -*-
+if [ "$(uname)" = "Darwin" ]; then
+  OS="Mac"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+  OS="Linux"
+fi
+
 # install zplug
 if [[ ! -d ~/.zplug ]];then
   git clone https://github.com/zplug/zplug ~/.zplug
@@ -75,6 +81,11 @@ eval "$(exenv init -)"
 
 # homeshick
 source "$HOMESHICK_DIR/homeshick.sh"
+
+# homebrew
+if [ $OS = "Linux" ]; then
+  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
 
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
