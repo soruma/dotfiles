@@ -5,11 +5,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
   OS="Linux"
 fi
 
-# install zplug
-if [[ ! -d ~/.zplug ]];then
-  git clone https://github.com/zplug/zplug ~/.zplug
-fi
-source ~/.zplug/init.zsh
+# initialize zplug
+source $ZPLUG_HOME/init.zsh
 
 # Load local alias
 source ~/.zsh/.zshrc_alias

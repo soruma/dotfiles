@@ -49,6 +49,9 @@ export HOMESHICK_DIR=/usr/local/opt/homeshick
 
 # ZSH
 export ZDOTDIR="$HOME/"
+if [ $OS = "Linux" ]; then
+    export ZPLUG_HOME=/home/linuxbrew/.linuxbrew/opt/zplug
+fi
 
 # ImageMagick
 export PKG_CONFIG_PATH=/opt/ImageMagick/lib/pkgconfig

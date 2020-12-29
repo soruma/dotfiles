@@ -12,3 +12,6 @@ fi
 gem install homesick
 homesick clone soruma/dotfiles
 homesick link dotfiles
+
+# Setting default shell
+sudo chsh -s $(which zsh)
