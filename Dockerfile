@@ -5,7 +5,7 @@ ENV TERM xterm
 
 RUN set -x && \
     apt update && \
-    apt install -y git rbenv ruby-build && \
+    apt install -y curl build-essential git sudo zlib1g-dev && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -19,12 +19,9 @@ RUN echo 'testuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER testuser
 WORKDIR /home/testuser
 
-RUN echo 'eval "$(rbenv init -)"' >> ~/.bash_profile && \
-    . ~/.bash_profile && \
-    rbenv install 2.7.1 && \
-    rbenv global 2.7.1 && \
-    gem install homesick
+COPY package_install.sh .
+COPY Brewfile .
+RUN ./package_install.sh
 
 COPY setup.sh .
-
 RUN ./setup.sh

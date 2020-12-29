@@ -67,6 +67,11 @@ chpwd() { ls -trg }
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
+# homebrew
+if [ $OS = "Linux" ]; then
+  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+fi
+
 # rbenv
 eval "$(rbenv init - zsh)"
 
@@ -81,11 +86,6 @@ eval "$(exenv init -)"
 
 # homeshick
 source "$HOMESHICK_DIR/homeshick.sh"
-
-# homebrew
-if [ $OS = "Linux" ]; then
-  eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-fi
 
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
