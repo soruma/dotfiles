@@ -89,3 +89,8 @@ fi
 
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
+
+# overwrite theme
+PROMPT='
+%{$fg_bold[green]%}%m %~%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
+$ '
