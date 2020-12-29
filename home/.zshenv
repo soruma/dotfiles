@@ -1,14 +1,14 @@
 # -*- mode: sh -*-
 if [ "$(uname)" = "Darwin" ]; then
-  OS="Mac"
+    OS="Mac"
 elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
-  OS="Linux"
+    OS="Linux"
 fi
 
 if [ $OS = "Mac" ]; then
-  export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+    export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 else
-  export EDITOR="emacs"
+    export EDITOR="emacs"
 fi
 
 # Java
