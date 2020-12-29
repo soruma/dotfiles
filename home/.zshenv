@@ -49,7 +49,9 @@ export HOMESHICK_DIR=/usr/local/opt/homeshick
 
 # ZSH
 export ZDOTDIR="$HOME/"
-if [ $OS = "Linux" ]; then
+if [ $OS = "Mac" ]; then
+    export ZPLUG_HOME=/usr/local/opt/zplug
+else
     export ZPLUG_HOME=/home/linuxbrew/.linuxbrew/opt/zplug
 fi
 
