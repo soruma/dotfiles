@@ -1,5 +1,11 @@
 #!/bin/bash
 
+set -x
+sudo apt update
+sudo apt install -y curl build-essential git sudo zlib1g-dev
+sudo apt clean
+sudo rm -rf /var/lib/apt/lists/*
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" >> ~/.bash_profile
 echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.bash_profile

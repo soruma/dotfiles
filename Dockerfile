@@ -5,7 +5,7 @@ ENV TERM xterm
 
 RUN set -x && \
     apt update && \
-    apt install -y curl build-essential git sudo zlib1g-dev && \
+    apt install -y sudo && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
