@@ -14,9 +14,6 @@ fi
 # Java
 export PATH="$HOME/.jenv/bin:$PATH"
 
-# TeX
-export PATH="/Library/TeX/texbin:$PATH"
-
 # Ruby
 if [ -e {$HOME/.rbenv/shims:$PATH} ]; then
     export PATH="$HOME/.rbenv/shims:$PATH"
