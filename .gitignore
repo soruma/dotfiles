@@ -3,3 +3,5 @@
 
 # zsh chash file
 .zcompdump
+
+Brewfile.lock.json
