@@ -75,9 +75,6 @@ eval "$(rbenv init - zsh)"
 # pyenv
 eval "$(pyenv init -)"
 
-# ndenv(Node.js)
-eval "$(ndenv init -)"
-
 # exenv(Elixir)
 eval "$(exenv init -)"
 

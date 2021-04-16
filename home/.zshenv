@@ -6,6 +6,10 @@ elif [ $(uname) = "Linux" ]; then
 fi
 
 if [ $OS = "Mac" ]; then
+    export PATH="/usr/local/sbin:$PATH"
+fi
+
+if [ $OS = "Mac" ]; then
     export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 else
     export EDITOR="emacs"
@@ -26,13 +30,6 @@ if [ -e {$HOME/.pyenv/shims:$PATH} ]; then
     export PATH="$HOME/.pyenv/shims:$PATH"
 else
     export PATH="$HOME/.pyenv/bin:$PATH"
-fi
-
-# ndenv(Node.js)
-if [ -e {$HOME/.ndenv/shims:$PATH} ]; then
-    export PATH="$HOME/.ndenv/shims:$PATH"
-else
-    export PATH="$HOME/.ndenv/bin:$PATH"
 fi
 
 # exenv(Elixir)
