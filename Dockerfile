@@ -25,3 +25,5 @@ RUN ./package_install.sh
 
 COPY setup.sh .
 RUN ./setup.sh
+
+CMD /bin/bash --login
