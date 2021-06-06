@@ -1,5 +1,5 @@
 brew "exenv"
-brew "ndenv"
+brew "nodenv"
 brew "pyenv"
 brew "rbenv"
 

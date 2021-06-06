@@ -78,6 +78,9 @@ eval "$(pyenv init -)"
 # exenv(Elixir)
 eval "$(exenv init -)"
 
+# nodenv(Node)
+eval "$(nodenv init -)"
+
 # homeshick
 source "$HOMESHICK_DIR/homeshick.sh"
 

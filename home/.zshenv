@@ -35,6 +35,9 @@ fi
 # exenv(Elixir)
 export PATH="$HOME/.exenv/bin:$PATH"
 
+# nodenv(Node)
+export PATH="$HOME/.nodenv/bin:$PATH"
+
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
