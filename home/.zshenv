@@ -36,10 +36,11 @@ else
 fi
 
 # pyenv
-if [ -e {$HOME/.pyenv/shims:$PATH} ]; then
-    export PATH="$HOME/.pyenv/shims:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+if [ -e {$PYENV_ROOT/shims:$PATH} ]; then
+    export PATH="$PYENV_ROOT/shims:$PATH"
 else
-    export PATH="$HOME/.pyenv/bin:$PATH"
+    export PATH="$PYENV_ROOT/bin:$PATH"
 fi
 
 # exenv(Elixir)
