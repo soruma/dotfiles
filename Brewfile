@@ -5,3 +5,5 @@ brew "rbenv"
 
 brew "zplug"
 brew "zsh"
+
+brew "gnu-sed"
