@@ -15,6 +15,7 @@ source ~/.zsh/.zshrc_alias
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/docker-compose", from:oh-my-zsh
+zplug "plugins/prompt_info_functions", from:oh-my-zsh
 
 # Load theme file
 zplug "themes/amuse", from:oh-my-zsh
@@ -22,7 +23,6 @@ zplug "themes/amuse", from:oh-my-zsh
 # Syntax highlighting bundle. zsh-syntax-highlighting must be loaded after
 # excuting compinit command and sourcing other plugins.
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
 zplug "zsh-users/zsh-autosuggestions", defer:2
 
 # Install plugins if there are plugins that have not been installed

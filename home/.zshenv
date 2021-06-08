@@ -10,6 +10,12 @@ if [ $OS = "Mac" ]; then
 fi
 
 if [ $OS = "Mac" ]; then
+    export ZPLUG_HOME=/opt/homebrew/opt/zplug
+else
+    export ZPLUG_HOME=/home/linuxbrew/.linuxbrew/opt/zplug
+fi
+
+if [ $OS = "Mac" ]; then
     export PATH="/usr/local/sbin:$PATH"
 fi
 
