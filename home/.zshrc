@@ -81,9 +81,6 @@ eval "$(exenv init -)"
 # nodenv(Node)
 eval "$(nodenv init -)"
 
-# homeshick
-source "$HOMESHICK_DIR/homeshick.sh"
-
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias
 

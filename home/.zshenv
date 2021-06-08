@@ -6,6 +6,10 @@ elif [ $(uname) = "Linux" ]; then
 fi
 
 if [ $OS = "Mac" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+if [ $OS = "Mac" ]; then
     export PATH="/usr/local/sbin:$PATH"
 fi
 
@@ -40,9 +44,6 @@ export PATH="$HOME/.nodenv/bin:$PATH"
 
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
-
-# homeshick
-export HOMESHICK_DIR=/usr/local/opt/homeshick
 
 # ZSH
 export ZDOTDIR="$HOME/"
