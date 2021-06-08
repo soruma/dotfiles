@@ -19,6 +19,11 @@ source ~/.bash_profile
 brew bundle
 if [ $(uname) = "Darwin" ]; then
     brew bundle --file macOS_Brewfile
+    if [ $(uname -a | egrep --only-matching 'arm64') ]; then
+       softwareupdate --install-rosetta
+    fi
+elif [ $(uname) = "Linux" ]; then
+    brew bundle --file linux_Brewfile
 fi
 
 rbenv install 3.0.0
