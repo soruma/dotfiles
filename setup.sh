@@ -15,3 +15,6 @@ homesick link dotfiles
 
 # Setting default shell
 sudo chsh -s $(which zsh)
+
+git config --global user.name "soruma"
+git config --global user.email "soruma.net@gmail.com"
