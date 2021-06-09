@@ -1,2 +1,6 @@
 cask "emacs"
 cask "docker"
+cask "iterm2"
+
+cask "google-drive"
+cask "google-chrome"

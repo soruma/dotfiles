@@ -9,7 +9,7 @@ if [ $? = 1 ]; then
 fi
 
 # Setting dotfiles
-gem install homesick
+sudo gem install homesick
 homesick clone soruma/dotfiles
 homesick link dotfiles
 
@@ -18,3 +18,5 @@ sudo chsh -s $(which zsh)
 
 git config --global user.name "soruma"
 git config --global user.email "soruma.net@gmail.com"
+
+rm ~/.bash_profile

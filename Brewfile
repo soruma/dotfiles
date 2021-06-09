@@ -1,8 +1,4 @@
-brew "exenv"
-brew "nodenv"
-brew "pyenv"
-brew "rbenv"
-
+brew "anyenv"
 brew "zplug"
 brew "zsh"
 

@@ -25,30 +25,6 @@ else
     export EDITOR="emacs"
 fi
 
-# Java
-export PATH="$HOME/.jenv/bin:$PATH"
-
-# Ruby
-if [ -e {$HOME/.rbenv/shims:$PATH} ]; then
-    export PATH="$HOME/.rbenv/shims:$PATH"
-else
-    export PATH="$HOME/.rbenv/bin:$PATH"
-fi
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-if [ -e {$PYENV_ROOT/shims:$PATH} ]; then
-    export PATH="$PYENV_ROOT/shims:$PATH"
-else
-    export PATH="$PYENV_ROOT/bin:$PATH"
-fi
-
-# exenv(Elixir)
-export PATH="$HOME/.exenv/bin:$PATH"
-
-# nodenv(Node)
-export PATH="$HOME/.nodenv/bin:$PATH"
-
 # yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 

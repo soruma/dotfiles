@@ -69,19 +69,8 @@ if [ $OS = "Linux" ]; then
   eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
 
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# exenv(Elixir)
-eval "$(exenv init -)"
-
-# nodenv(Node)
-eval "$(nodenv init -)"
+# anyenv
+eval "$(anyenv init -)"
 
 # load .zshrc_*
 [ -f $ZDOTDIR/.zshrc_alias ] && . $ZDOTDIR/.zshrc_alias

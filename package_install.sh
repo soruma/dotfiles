@@ -26,6 +26,12 @@ elif [ $(uname) = "Linux" ]; then
     brew bundle --file linux_Brewfile
 fi
 
-rbenv install 3.0.0
-rbenv global 3.0.0
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
+anyenv init
+anyenv install --init
+mkdir -p $(anyenv root)/plugins
+git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
+anyenv update
+anyenv install rbenv
+rbenv install 3.0.1
+exec $SHELL -l
