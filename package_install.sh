@@ -12,26 +12,25 @@ elif [ $(uname) = "Linux" ]; then
 fi
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" >> ~/.bash_profile
-echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.bash_profile
-source ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew bundle
 if [ $(uname) = "Darwin" ]; then
-    brew bundle --file macOS_Brewfile
     if [ $(uname -a | egrep --only-matching 'arm64') ]; then
        softwareupdate --install-rosetta
     fi
+    brew bundle --file macOS_Brewfile
 elif [ $(uname) = "Linux" ]; then
     brew bundle --file linux_Brewfile
 fi
 
-echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
-anyenv init
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+eval "$(anyenv init -)"
 anyenv install --init
 mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 anyenv update
 anyenv install rbenv
 rbenv install 3.0.1
-exec $SHELL -l
+rbenv global 3.0.1

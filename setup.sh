@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(anyenv init -)"
 
 which ruby > /dev/null
 if [ $? = 1 ]; then
@@ -18,5 +19,3 @@ sudo chsh -s $(which zsh)
 
 git config --global user.name "soruma"
 git config --global user.email "soruma.net@gmail.com"
-
-rm ~/.bash_profile

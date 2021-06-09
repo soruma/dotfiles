@@ -1,4 +1,5 @@
 brew "anyenv"
+brew "openssl"
 brew "zplug"
 brew "zsh"
 
