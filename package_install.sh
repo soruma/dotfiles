@@ -32,5 +32,6 @@ mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 anyenv update
 anyenv install rbenv
+eval "$(anyenv init -)"
 rbenv install 3.0.1
 rbenv global 3.0.1
