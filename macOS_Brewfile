@@ -1,6 +1,24 @@
-cask "emacs"
 cask "docker"
+cask "emacs"
 cask "iterm2"
+cask "visual-studio-code"
 
+cask "gimp"
 cask "google-drive"
 cask "google-chrome"
+cask "kindle"
+cask "onedrive"
+cask "twitter"
+cask "vlc"
+
+cask "skype-for-business"
+cask "slack"
+cask "zoom"
+
+cask "cleanmymac"
+cask "karabiner-elements"
+
+brew "mas"
+
+mas "AdBlock Pro for Safari", id: 1018301773
+mas "Numbers", id: 409203825
