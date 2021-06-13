@@ -19,3 +19,4 @@ sudo chsh -s $(which zsh)
 
 git config --global user.name "soruma"
 git config --global user.email "soruma.net@gmail.com"
+git config --global core.excludesfile ~/.gitignore_global
