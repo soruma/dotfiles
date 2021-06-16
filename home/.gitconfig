@@ -1,0 +1,7 @@
+[user]
+	name = soruma
+	email = soruma.net@gmail.com
+[core]
+	excludesfile = /Users/soruma/.gitignore_global
+[pull]
+	rebase = true
