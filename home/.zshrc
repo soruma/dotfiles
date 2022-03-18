@@ -58,6 +58,23 @@ bindkey '^r' peco-select-history
 # cdの後にlsを実行
 chpwd() { ls -trg }
 
+# git hack
+function isWinDir {
+    case $PWD/ in
+	/mnt/*) return $(true);;
+	*) return $(false);;
+    esac
+}
+# wrap the git command to either run windows git or linux
+function git {
+    if isWinDir
+    then
+	git.exe "$@"
+    else
+	/usr/bin/git "$@"
+    fi
+}
+
 # emacsでZSHを使う
 [[ $EMACS = t ]] && unsetopt zle
 
